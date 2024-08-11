@@ -23,7 +23,7 @@ func main() {
 bot.Handle("/start", func(c tele.Context) error {
 		chatID := c.Chat().ID  
 
-		registerURL := fmt.Sprintf("https://symphonious-cat-f90f73.netlify.app?&chat_id=%d",chatID)
+		registerURL := fmt.Sprintf("https://taskfront.emivn.io?&chat_id=%d",chatID)
 
 		webAppInfo := &tele.WebApp{
 			URL: registerURL,
