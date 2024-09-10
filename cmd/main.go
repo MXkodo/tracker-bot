@@ -41,7 +41,7 @@ bot.Handle("/start", func(c tele.Context) error {
 			InlineKeyboard: inlineKeys,
 		}
 
-		if _, err := bot.Send(c.Chat(), "Здравствуйте! Добро пожаловать в EMIVN TRACKER.\nЭто приложение предназначено для управления вашими задачами.\nНажмите на кнопку ниже, чтобы просмотреть список задач и воспользоваться всеми функциями приложения.✅", tele.ModeHTML, inlineMarkup); err != nil {
+		if _, err := bot.Send(c.Chat(), "Здравствуйте!\nДобро пожаловать в EMIVN TRACKER.\nЭто приложение предназначено для управления вашими задачами. Нажмите на кнопку ниже, чтобы просмотреть список задач и воспользоваться всеми функциями приложения.✅", tele.ModeHTML, inlineMarkup); err != nil {
 			return err
 		}
 
