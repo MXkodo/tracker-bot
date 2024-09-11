@@ -37,7 +37,7 @@ func main() {
 	bot.Handle("/start", func(c tele.Context) error {
 		userName := c.Sender().Username
 		if userName == "" {
-			userName = c.Sender().FirstName // Используем FirstName, если Username отсутствует
+			userName = c.Sender().FirstName 
 		}
 
 		user, err := getUserByUsername(userName)
