@@ -59,7 +59,7 @@ func main() {
 		}
 
 		btn := tele.InlineButton{
-			Text:  "📋",
+			Text:  "Начать",
 			WebApp: webAppInfo,
 		}
 
